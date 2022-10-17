@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Circular Std';
+    src: local('Circular Std Black'), local('Circular-Std-Black'),
+        url('./font/Circular/CircularStd-Black.woff2') format('woff2'),
+        url('./font/Circular/CircularStd-Black.woff') format('woff'),
+        url('./font/Circular/CircularStd-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+section {
+    height: 100vh;
+    background-color: #0B57D0;
+}
+
+header nav .logo {
+    padding: 35px 150px;
+}
+
+.container .img-container {
+    position: relative;
+    top: 221px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .bloc-text .right {
+    display: flex;
+}
