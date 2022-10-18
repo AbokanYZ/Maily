@@ -24,13 +24,47 @@ header nav .logo {
     padding: 35px 150px;
 }
 
+.logo h2 {
+    letter-spacing: 0.03em;
+    color: white;
+}
+
+.left h1 {
+    font-family: 'Circular Std';
+    font-size: 40px;
+    position: relative;
+    margin-left: 330px;
+    color: white;
+    width: 410px;
+}
+
 .container .img-container {
     position: relative;
-    top: 221px;
+    top: 203px;
     display: flex;
     justify-content: center;
 }
 
 .container .bloc-text .right {
     display: flex;
+    position: relative;
+    width: 300px;
+    left: 1016px;
+    flex-direction: column;
+}
+
+.container .bloc-text .right p {
+    color: white;
+    position: relative;
+    font-size: 28px;
+}
+
+.container .bloc-text .right a {
+    color: white;
+}
+
+.container .bloc-text .right .button a {
+    background-color: blue;
+    padding: 25px 35px;
+    border-radius: 8px;
 }
