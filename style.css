@@ -6,13 +6,12 @@
 }
 
 @font-face {
-    font-family: 'Circular Std';
-    src: local('Circular Std Black'), local('Circular-Std-Black'),
-        url('./font/Circular/CircularStd-Black.woff2') format('woff2'),
-        url('./font/Circular/CircularStd-Black.woff') format('woff'),
-        url('./font/Circular/CircularStd-Black.ttf') format('truetype');
-    font-weight: 900;
+    font-family: 'robotoregular';
+    src: url('font/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('font/Roboto/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
+
 }
 
 section {
@@ -20,51 +19,73 @@ section {
     background-color: #0B57D0;
 }
 
-header nav .logo {
-    padding: 35px 150px;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 120px;
 }
 
 .logo h2 {
-    letter-spacing: 0.03em;
     color: white;
 }
 
-.left h1 {
-    font-family: 'Circular Std';
-    font-size: 40px;
+.left {
     position: relative;
-    margin-left: 330px;
+    right: 102px;
+}
+
+.left h1 {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    position: relative;
     color: white;
-    width: 410px;
+    width: 450px;
+    letter-spacing: 0.01em;
 }
 
 .container .img-container {
     position: relative;
-    top: 203px;
     display: flex;
     justify-content: center;
+    top: 257px;
+}
+
+.container .bloc-text {
+    display: flex;
+    position: absolute;
+    width: 1000px;
+    left: 440px;
+    top: 115px
 }
 
 .container .bloc-text .right {
     display: flex;
     position: relative;
-    width: 300px;
-    left: 1016px;
     flex-direction: column;
+    left: 340px;
+    top: 3px;
+}
+
+.container .bloc-text .right i {
+    margin-left: 2px;
 }
 
 .container .bloc-text .right p {
     color: white;
     position: relative;
-    font-size: 28px;
-}
-
-.container .bloc-text .right a {
-    color: white;
+    font-size: 20px;
+    font-family: 'robotoregular';
+    width: 400px;
 }
 
 .container .bloc-text .right .button a {
-    background-color: blue;
-    padding: 25px 35px;
-    border-radius: 8px;
+    background-color: #4b7bec;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 6px;
+    position: relative;
+    top: 60px;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
