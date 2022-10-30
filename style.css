@@ -1,8 +1,8 @@
 * {
     margin: 0;
     padding: 0;
-    text-decoration: none;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 @font-face {
@@ -14,78 +14,90 @@
 
 }
 
+@font-face {
+    font-family: 'robotobold';
+    src: url('font/Roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('font/Roboto/roboto-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (max-width: 1350px) {
+    .right i {
+        display: none;
+    }
+}
+
 section {
     height: 100vh;
     background-color: #0B57D0;
 }
 
 header nav {
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
-    padding: 30px 120px;
+    align-items: center;
 }
 
-.logo h2 {
+.container {
+    width: 90%;
+    margin: 0 auto;
+    height: 50vh;
+}
+
+.bloc-text {
+    margin-top: 35px;
+}
+
+.right-part a {
     color: white;
+    text-transform: uppercase;
+    font-family: 'robotobold';
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
 }
 
-.left {
-    position: relative;
-    right: 102px;
-}
-
-.left h1 {
-    font-family: 'Inter', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
-    position: relative;
+.left p {
+    font-family: 'robotobold';
+    font-size: 60px;
     color: white;
-    width: 450px;
-    letter-spacing: 0.01em;
+    width: 600px;
 }
 
-.container .img-container {
-    position: relative;
+.right p {
+    font-family: 'robotoregular';
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.right i {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 4px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button a {
+    color: white;
+    padding: 20px 50px;
+    background: #248AFF;
+    border-radius: 6px;
+    font-family: 'robotoregular';
+    font-size: 18px;
+}
+
+.bloc-img {
     display: flex;
     justify-content: center;
-    top: 257px;
-}
-
-.container .bloc-text {
-    display: flex;
-    position: absolute;
-    width: 1000px;
-    left: 440px;
-    top: 115px
-}
-
-.container .bloc-text .right {
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    left: 340px;
-    top: 3px;
-}
-
-.container .bloc-text .right i {
-    margin-left: 2px;
-}
-
-.container .bloc-text .right p {
-    color: white;
-    position: relative;
-    font-size: 20px;
-    font-family: 'robotoregular';
-    width: 400px;
-}
-
-.container .bloc-text .right .button a {
-    background-color: #4b7bec;
-    color: white;
-    padding: 20px 30px;
-    border-radius: 6px;
-    position: relative;
-    top: 60px;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Roboto', sans-serif;
+    min-width: 100%;
+    margin-top: 41px;
 }
